@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest02MainActivity"
+    android:orientation="vertical">
+    
+    <EditText
+        android:id="@+id/serverText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SERVER"
+        android:gravity="center"
+        android:enabled="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/portServerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Port Server"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/portServer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/startServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Server"/>
+
+    <EditText
+        android:id="@+id/clientText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLIENT"
+        android:gravity="center"
+        android:enabled="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/prefixClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Prefix"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/textClient"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/getClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get"/>
+
+    <EditText
+        android:id="@+id/invizibil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+
+</LinearLayout>
